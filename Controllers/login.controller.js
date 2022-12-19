@@ -12,13 +12,13 @@ const fetch = require("node-fetch");
             if (check == 'Logged in'){
                 return res.status(200).send({
                     success: true,
-                    role:res1.result,
+                    role:res1,
                     message:"logged in"
                 })
             }else {
                 return res.status(401).send({
                     success: false,
-                    role:res1.result,
+                    role:res1,
                     message:"failed to login"
                 })
             }
